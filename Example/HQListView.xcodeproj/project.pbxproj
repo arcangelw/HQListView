@@ -28,7 +28,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0682794B993EFB30B8903C98 /* HQListView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = HQListView.podspec; path = ../HQListView.podspec; sourceTree = "<group>"; };
+		0682794B993EFB30B8903C98 /* StockListView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = StockListView.podspec; path = ../StockListView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		47DB615C565E739BE34CBA4E /* Pods-HQListView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQListView_Example.debug.xcconfig"; path = "Target Support Files/Pods-HQListView_Example/Pods-HQListView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		4A433D52AA172A5838F6EDAA /* Pods-HQListView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQListView_Tests.release.xcconfig"; path = "Target Support Files/Pods-HQListView_Tests/Pods-HQListView_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4C539C57D73B7E1DCEC2C3CF /* Pods_HQListView_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HQListView_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,10 +42,10 @@
 		607FACE51AFB9204008FA782 /* HQListView_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HQListView_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		66064C038FBB65EBE7AAAD06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		66064C038FBB65EBE7AAAD06 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		A762BC6ABA36BF8B7F5B62C1 /* Pods-HQListView_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQListView_Example.release.xcconfig"; path = "Target Support Files/Pods-HQListView_Example/Pods-HQListView_Example.release.xcconfig"; sourceTree = "<group>"; };
 		ACF9977A56ABF0DF6E593470 /* Pods-HQListView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HQListView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-HQListView_Tests/Pods-HQListView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BC8DFC4F7DC0FCF33C8118A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BC8DFC4F7DC0FCF33C8118A3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		CAD45ADE2CD774959606CC7B /* Pods_HQListView_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HQListView_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -132,7 +132,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				0682794B993EFB30B8903C98 /* HQListView.podspec */,
+				0682794B993EFB30B8903C98 /* StockListView.podspec */,
 				66064C038FBB65EBE7AAAD06 /* README.md */,
 				BC8DFC4F7DC0FCF33C8118A3 /* LICENSE */,
 			);
@@ -147,7 +147,6 @@
 				ACF9977A56ABF0DF6E593470 /* Pods-HQListView_Tests.debug.xcconfig */,
 				4A433D52AA172A5838F6EDAA /* Pods-HQListView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -172,6 +171,7 @@
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
 				09C0797FF810A5332534836F /* [CP] Embed Pods Frameworks */,
+				33FE6EA428D3321B00B4FCAB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -213,10 +213,12 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7VCQ94463N;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = 7VCQ94463N;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -227,6 +229,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -269,16 +272,39 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-HQListView_Example/Pods-HQListView_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/HQListView/HQListView.framework",
+				"${BUILT_PRODUCTS_DIR}/LookinServer/LookinServer.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/Then/Then.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HQListView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LookinServer.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Then.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HQListView_Example/Pods-HQListView_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		33FE6EA428D3321B00B4FCAB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# 只在debug环境生效\nif [ $CONFIGURATION == Debug ]; then\ncd ..\n\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"$SRCROOT\"\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\ncd ../StockListView\n\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" .\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\nfi\n";
 		};
 		4399DE25A0762F0E6606679C /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -478,7 +504,9 @@
 			baseConfigurationReference = 47DB615C565E739BE34CBA4E /* Pods-HQListView_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7VCQ94463N;
 				INFOPLIST_FILE = HQListView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -493,7 +521,9 @@
 			baseConfigurationReference = A762BC6ABA36BF8B7F5B62C1 /* Pods-HQListView_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 7VCQ94463N;
 				INFOPLIST_FILE = HQListView/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -507,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = ACF9977A56ABF0DF6E593470 /* Pods-HQListView_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7VCQ94463N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -516,6 +547,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -529,11 +561,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4A433D52AA172A5838F6EDAA /* Pods-HQListView_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = 7VCQ94463N;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

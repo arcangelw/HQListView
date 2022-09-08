@@ -1,0 +1,43 @@
+PODS:
+  - LookinServer (1.0.6)
+  - MJRefresh (3.7.5)
+  - SnapKit (5.6.0)
+  - StockListView (0.1.0):
+    - SnapKit
+    - Then
+  - SwiftFormat/CLI (0.49.4)
+  - SwiftLint (0.35.0)
+  - Then (3.0.0)
+
+DEPENDENCIES:
+  - LookinServer
+  - MJRefresh
+  - StockListView (from `../`)
+  - SwiftFormat/CLI (= 0.49.4)
+  - SwiftLint (= 0.35.0)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - LookinServer
+    - MJRefresh
+    - SnapKit
+    - SwiftFormat
+    - SwiftLint
+    - Then
+
+EXTERNAL SOURCES:
+  StockListView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LookinServer: 18155b1e4a08213c236a1dd6b7ca52328a70a1e3
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  SnapKit: e01d52ebb8ddbc333eefe2132acf85c8227d9c25
+  StockListView: 67111770756de81b690ee61730c6c75d892ba1cb
+  SwiftFormat: 8acc16efcecb563206cbe90b4cb047cfdf9aafdb
+  SwiftLint: 5553187048b900c91aa03552807681bb6b027846
+  Then: 844265ae87834bbe1147d91d5d41a404da2ec27d
+
+PODFILE CHECKSUM: 4ac2deeb8ddeb082ffb8276aa772207ab590bc27
+
+COCOAPODS: 1.11.3

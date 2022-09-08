@@ -1,0 +1,43 @@
+disabled_rules:
+  - implicit_getter
+  - no_space_in_method_call
+  # - trailing_whitespace
+#  - multiple_closures_with_trailing_closure
+#  - cyclomatic_complexity
+#  - type_body_length
+#  - function_body_length
+#  - function_parameter_count
+#  - file_length
+#  - compiler_protocol_init
+#  - line_length
+#  - for_where
+#  - large_tuple
+#  - nesting
+#  - identifier_name
+#  - line_length
+opt_in_rules:
+  # force_unwrapping
+excluded:
+  - Example/Pods/**
+  - Pods/**
+identifier_name:
+  min_length: 3
+  #  max_length:
+  #    warning: 90
+  #    error: 1000
+  #  allowed_symbols: ["_"]
+  excluded:
+    - id
+    - db
+#file_length:
+#  warning: 400
+#  error: 3000
+line_length:
+  #  warning: 180
+  error: 3500
+#  ignores_comments: true
+ignores_urls: true
+cyclomatic_complexity:
+  #  warning: 1000
+  error: 1000
+#force_unwrapping: error
